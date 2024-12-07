@@ -1,0 +1,41 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+:root{
+    --backgroundColor: #D19E71;
+}
+
+.btnlogin {
+    background: #D19E71;
+    color: var(--backgroundColor);
+    border-radius: 30%;
+    padding: 15px 25px;
+    
+}
+  
+
+h2{
+    color: #B2A18D;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100px;
+    font-size: 55px;
+}
+
+nav{
+
+    background-color: #aebcd8;
+
+}
+
+
