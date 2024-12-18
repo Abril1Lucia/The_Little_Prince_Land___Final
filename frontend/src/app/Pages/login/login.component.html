@@ -1,1 +1,42 @@
-<p>login works!</p>
+<main>
+
+    <!-- <a class="btnlogin" routerLink="/admin"> admins </a> -->
+    <!-- Login y Registro -->
+    <div class="Fondo">
+        <div class="container">
+
+            <div class="form-content" (ngSubmit)="handleSubmit()">
+                <h1> LOGIN </h1>
+                <img href="url para redirección" class="imagen" src="/assets/login" alt="">
+                <form [formGroup]="formularioLogin">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="Nombre" formControlName="name" placeholder="Nombre">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" formControlName="email" placeholder="email">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="Contraseña" formControlName="password" placeholder="Contraseña">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="text" name="Telefono" formControlName="telefono" placeholder="Telefono">
+                        </div>
+                    </div>
+                    <div class="olvidaste">
+                        <p> ¿Olvidaste tu Contraseña? <a href="#"> Da click aqui </a></p>
+                    </div>
+                    <div class="btn-field">
+                        <button id="signUp" routerLink="/registro" type="button" class="btn">REGISTRO</button>
+                        <button id="signIn" routerLink="/home" type="submit" class="botoncito">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+

@@ -40,7 +40,7 @@ const loginAdmins = async (request, response) =>{
   
         return response.status(200).json({
             mensaje:'ya se logro crear tu usuario :)... quieres empanada 🥟? es q estas muy desnutrido',
-            tokenGenerado: token //NO SE HACE!!!!! ESTO ES MALA PRACTICA 7-7
+            tokenGenerado: tokenAdmin //NO SE HACE!!!!! ESTO ES MALA PRACTICA 7-7
         })
   
           

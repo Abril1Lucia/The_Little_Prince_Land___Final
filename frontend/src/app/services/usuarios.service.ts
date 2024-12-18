@@ -7,7 +7,7 @@ import { Users } from '../interfaces/users';
 })
 export class UsuariosService {
 
-private _httpClient = inject (HttpClient);
+private _httpClient = inject(HttpClient);
 
 private URL_USERS = 'http://localhost:9000/usuarios';
 

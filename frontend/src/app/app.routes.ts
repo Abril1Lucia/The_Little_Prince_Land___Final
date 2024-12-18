@@ -9,17 +9,25 @@ import { NotFoundComponent } from './Pages/not-found/not-found.component';
 import { ObrasComponent } from './Pages/obras/obras.component';
 import { RegistroComponent } from './Pages/registro/registro.component';
 import { UsersComponent } from './Pages/users/users.component';
+import { authGuard } from './guards/auth.guard';
+import { ObrasCrearComponent } from './Pages/obras-crear/obras-crear.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent, title: 'Inicio'},
     {path: 'about', component: AboutUsComponent, title: 'About Us'},
-    {path: 'Admin', component: AdminComponent, title: 'Admins', children: [
+
+    {path: 'admin', component: AdminComponent, title: 'admin', //canActivate:[authGuard],
+        canActivateChild:[authGuard],
+        
+        children: [
         {path: '', component: InventarioComponent, title: 'Inventario'},
-        {path: 'Users', component: UsersComponent, title: 'Users'}
+        {path: 'users', component: UsersComponent, title: 'Users'}
     ]},
-    {path: 'Libro', component: LibroComponent, title:'sobre el libro'},
+    {path: 'libro', component: LibroComponent, title:'sobre el libro'},
     {path: 'login', component: LoginComponent, title: 'Login'},
     {path: 'obras', component:ObrasComponent, title: 'obras'},
+
+            {path:'crear', component: ObrasCrearComponent, title:'crear'},
     {path: 'registro', component: RegistroComponent, title: 'registro'},
     {path: '**', component: NotFoundComponent, title: 'not found'}
 

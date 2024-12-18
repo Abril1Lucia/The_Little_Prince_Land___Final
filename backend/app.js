@@ -7,13 +7,14 @@ import { productRouter } from "./src/routes/Image.routes.js";
 import { usersRouter } from "./src/routes/Users.routes.js";
 import loginRouter from "./src/routes/login.routes.js";
 import { adminsRouter } from "./src/routes/Admins.routes.js";
+import cors from "cors";
 
 
 const app = express(); 
 dotenv.config(); //se configura para poder usar variables we
 const port = process.env.PORT;
 connectionMongo();
-
+app.use(cors())
 
 app.use(express.json());
 app.use('/imagenes', productRouter);
