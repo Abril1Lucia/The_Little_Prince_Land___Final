@@ -4,6 +4,8 @@ import { getimage, postimage, DeleteimageById, putimageById} from '../controller
 //configura el router del express
 import express from 'express';
 
+import auth from '../middleware/auth.js';
+
 
 export const productRouter = express.Router();
 
@@ -18,7 +20,7 @@ productRouter.get('/obtener', getimage);
 productRouter.post('/crear', postimage);
 //ruta de peticion para el producto actualizar we
 
-productRouter.put('/actualizar/:id', putimageById);
+productRouter.put('/actualizar/:id', auth('admin'), putimageById);
 
 //ruta de peticion para el producto para eliminar we
-productRouter.delete('/eliminar/:id', DeleteimageById);
+productRouter.delete('/eliminar/:id', auth('admin'), DeleteimageById);
