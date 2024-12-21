@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { provideToastr, ToastrService } from 'ngx-toastr';
 import { jwtDecode } from 'jwt-decode';
 import { Credenciales } from '../interfaces/credenciales';
+import { CredencialAdmin } from '../interfaces/credencial-admin';
 
 
 
@@ -18,13 +19,19 @@ private _router = inject(Router)
 public  _toastrService = inject(ToastrService);
 
 //se saca del backend y el postman we
-private URL_LOGIN = "http://localhost:9000/iniciarSesion"
-
+private URL_LOGIN_USER = "http://localhost:9000/iniciarSesion/Users"
+private URL_LOGIN_ADMIN ='http://localhost:9000/iniciarSesion/Admin'
 //iniciar sesion peticion de POST 
 
-IniciodeSesion(credencialesdeingreso:Credenciales){
-  return this._httpClient.post(this.URL_LOGIN,credencialesdeingreso)
+IniciodeSesionUser(credencialesdeingreso:Credenciales){
+  return this._httpClient.post(this.URL_LOGIN_USER,credencialesdeingreso)
 }
+
+InicioSesionAdmin(credencialesdeingreso:CredencialAdmin){
+  return this._httpClient.post(this.URL_LOGIN_ADMIN,credencialesdeingreso)
+}
+
+
 
 //obtener token we
 

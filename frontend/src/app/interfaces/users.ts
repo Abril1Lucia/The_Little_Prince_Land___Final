@@ -1,5 +1,5 @@
 export interface Users {
-    image: string;
+    image?: string;
     fullName: string;
     email: string;
     password: string;

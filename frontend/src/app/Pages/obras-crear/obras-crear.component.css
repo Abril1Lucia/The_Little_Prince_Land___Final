@@ -113,3 +113,37 @@ h2{
     cursor: pointer;
     top: -70px; 
 }
+
+@media (max-width: 1024px){
+
+    .botoncito{
+        border: 3px solid #A65437;
+        background-color: #D19E71;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 20px 50px;
+        border-radius: 30px;
+        position: relative;
+        bottom: 20%;
+        left: 300px;
+        cursor: pointer;
+        top: -70px; 
+    }
+
+    .Principe{
+        width: 500px;
+        height: 290px;
+    }
+    
+    .Zorro{
+        width: 500px;
+    }
+    
+    .Rosa {
+        width: 500px;
+        height: 100px;
+    }
+
+    
+}
+

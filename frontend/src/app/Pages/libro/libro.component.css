@@ -49,6 +49,25 @@
     line-height: 20px;
 }
 
+.Analisis{
+    width: 100%;
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.Analisis p {
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 20px;
+
+}
+
 .Libro{
     width: 1350px;
     height: 1000px;
@@ -59,19 +78,30 @@
 @media (max-width: 1024px){
     .clasico{
         display: none;
-        padding: 10px 50px;
-        margin: 10px auto;
-        font-size: 10px;
+       
     }
 
     .Libro{
-        width: 647px;
+        width: 100%;
     }
 
-    .container{
-        gap: 20px;
+    .container {
         width: 500px;
 
     }
+
+    .container p {
+        width: 100%;
+    }
     
+    .Analisis{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: justify;
+    line-height: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    }
 }

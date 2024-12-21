@@ -1,38 +1,43 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Imagen } from '../interfaces/Imagen';
+
+
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ProductosService {
 
 
   private _httpClient = inject(HttpClient); 
-  private URL_PRODUCTOS = 'http://localhost:9000/imagenes'
+
+  API_URL_GET = 'http://localhost:9000/imagenes/obtener';
+  API_URL_POST = 'http://localhost:9000/imagenes/crear';
+  API_URL_PUT = 'http://localhost:9000/imagenes/actualizar/:id';
+  API_URL_DELETE = 'http://localhost:9000/imagenes/eliminar/:id';
 
 
   
+ //obtener datos
+ getProducts() {
+  return this._httpClient.get(this.API_URL_GET);
+}
 
-  // POST
-  postProducto(product:Imagen){
-    return this._httpClient.post(this.URL_PRODUCTOS + '/crear', product);
-  }
+//crear datos
+createProduct(producto: Imagen) {
+  return this._httpClient.post(this.API_URL_POST, producto);
+}
 
-  // GET
-  getProductos(){
-    return this._httpClient.get(this.URL_PRODUCTOS + '/obtener');
-  }
+//modificar datos
+updateProduct(id: string | undefined, producto: Imagen
+) {
+  return this._httpClient.put(`${this.API_URL_PUT}/${id}`, producto);
+}
 
-  // PUT
-  putProducto(productActualizado:Imagen, id:string){
-    // para actualizar debemos pasar el body y el id del producto a actualizar
-    return this._httpClient.put(this.URL_PRODUCTOS + '/actualizar/' + id, productActualizado);
-  }
-
-
-  // DELETE
-  deleteProducto(id:string){
-    // la ruta esta conformada por: ruta generica + acción + id
-    return this._httpClient.delete(this.URL_PRODUCTOS + '/eliminar/' + id);
-  }
+//eliminar
+deleteProduct(id: string | undefined) {
+  return this._httpClient.delete(`${this.API_URL_DELETE}/${id}`);
+}
 }

@@ -14,7 +14,8 @@
     </header>
 
     <main>
-
+          
+        <form [formGroup]="ObrasFormulario" (ngSubmit)="handleSubmit()">
             <section class="Star">
                 <article class="container">
                     <br>
@@ -22,31 +23,31 @@
                 
                         <div class="input-field">
                     <i class="fa-solid fa-lock"></i>
-                    <input class="Principe" type="image" name="Imagen" formControlName="Imagen" placeholder="Es necesaria una imagen">
+                    <input class="Principe" type="text" name="image" formControlName="image" placeholder="Es necesaria una URL de una imagen">
                     <br>
                     <br>
                     <h3>Nombre</h3>
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="Zorro" type="text" name="Nombre" formControlName="Nombre" placeholder="Inserte un Nombre.">
+                        <input class="Zorro" type="text" name="name" formControlName="name" placeholder="Inserte un Nombre.">
                     </div>
                     <br>
                     <h3>Descripcion:</h3>
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="Rosa" type="text" name="Nombre" formControlName="Nombre" placeholder="Descripción de la imagen.">
+                        <input class="Rosa" type="text" name="description" formControlName="description" placeholder="Descripción de la imagen.">
                     </div>
                     <br>
                     <h3>Tecnica:</h3>
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="Rosa" type="text" name="Nombre" formControlName="Nombre" placeholder="Aclare la técnica usada.">
+                        <input class="Rosa" type="text" name="technique" formControlName="technique" placeholder="Aclare la técnica usada.">
                     </div>
                     <br>
                     <h3>Categoria:</h3>
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="Zorro" type="text" name="Nombre" formControlName="Nombre" placeholder="Usa una Categoria.">
+                        <input class="Zorro" type="text" name="category" formControlName="category" placeholder="Usa una Categoria.">
                     </div>
                     <br>
                     
@@ -59,9 +60,10 @@
             
             <figure>
                 <a class="btn" routerLink="/">CANCELAR </a>
-                <a class="botoncito" routerLink="/obras">PUBLICAR </a>
+                <a class="botoncito" type="submit" routerLink="/obras">PUBLICAR </a>
             </figure>
 
+        </form>
     </main>
 
     <Footer>

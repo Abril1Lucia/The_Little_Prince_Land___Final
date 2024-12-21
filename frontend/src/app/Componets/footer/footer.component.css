@@ -40,3 +40,10 @@
 .logosContacto img {
     width: 70px;
 }
+
+
+@media (max-width: 1024px){
+    .pie-de-pagina{
+        width: 100%;
+    }
+}

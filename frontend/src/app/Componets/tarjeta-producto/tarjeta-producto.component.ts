@@ -24,7 +24,7 @@ export class TarjetaProductoComponent {
 
   obtenerProductos(){
 
-    this._productsService.getProductos().subscribe({
+    this._productsService.getProducts().subscribe({
       next: (res:any) =>{
         //sale bien 
         this.allProducts = res.datos;
