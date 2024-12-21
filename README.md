@@ -1,17 +1,16 @@
-<h1>Little Prince Land</h1>
+Little prince land - la primera Fan page del principito
+¡The Little Prince Land! la pagina de fans de la novela del principito, donde podras hablar con fans de alrededor del mundo, ver y publicar obras.
 
-<h2>Descripcion</h2>
+Características principales:
+Lista de obras: aqui podran subir y ver las obras realizadas por otros fans.
+foro de comunidad: Conversa con fans al rededor del mundo.
 
-<p>Un espacio dedicado a los lectores de 'El Principito'. Esta página es un rincón para aquellos que han sido cautivados
-    por la historia del pequeño príncipe y su recorrido por distintos planetas. Aquí podrás encontrar un foro donde
-    compartir tus reflexiones, preguntas e interpretaciones sobre la novela. Además, una galería de fanarts te permitirá
-    apreciar la creatividad de otros lectores y sumarte a la conversación con tus propias creaciones.
+Tecnologías utilizadas
+HTML5: semántica de la página.
+CSS3: Diseño y estilos para una experiencia amigable.
+JavaScript: Funcionalidades interactivas para mejorar la navegación.
+TypeScript: conexion de rutas
+Node
 
-    en pocas palabras, esta pagina, es una fanpage de la conocida novela "el principito", donde planeo incluir un foro y
-    una manera donde los artistas suban fanarts y comenten sus teorias acerca de la novela
-</p>
-
-<h2>Autores:</h2>
-<p>solo estoy yo para el diseño y funcionamiento de la pagina
-    -Abril Lucia Castellanos Lopez
-</p>
+CopyRight y derechos de autor
+Este proyecto ha sido creado por Abril Castellanos Lopez, todos los derechos reservados, ademas que la mayoria de las imagenes son de mi autoria.
