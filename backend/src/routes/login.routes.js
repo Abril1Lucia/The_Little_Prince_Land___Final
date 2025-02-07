@@ -1,4 +1,4 @@
-import loginUsers from "../services/loginUsers.Service.js";
+import loginUsers from "../services/loginUsers.service.js";
 
 import loginAdmins from "../services/loginadmin.service.js";
 
