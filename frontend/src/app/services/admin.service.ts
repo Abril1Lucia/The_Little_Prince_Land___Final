@@ -10,7 +10,7 @@ export class AdminService {
 
   private _httpClient = inject(HttpClient);
   
-  private URL_ADMINS = 'http://18.227.209.169:9000/Admin';
+  private URL_ADMINS = 'http://3.138.68.225:9000/Admin';
 
   constructor() { }
 
