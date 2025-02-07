@@ -60,6 +60,10 @@ _Router = inject(Router)
 
     if (nuevoUsuario) {
 
+      console.log(
+        'hola :)', nuevoUsuario
+      )
+
       this._UserService.postUsuarios(nuevoUsuario).subscribe({
 
         next: (res: any) => {

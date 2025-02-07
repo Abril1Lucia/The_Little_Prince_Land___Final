@@ -114,6 +114,8 @@ h2{
     top: -70px; 
 }
 
+
+
 @media (max-width: 1024px){
 
     .botoncito{
@@ -141,6 +143,53 @@ h2{
     
     .Rosa {
         width: 500px;
+        height: 100px;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width: 844px){
+
+
+    .btn{
+        width: -20px;
+
+    }
+
+
+    .botoncito{
+        border: 3px solid #A65437;
+        background-color: #D19E71;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 20px 50px;
+        border-radius: 30px;
+        position: relative;
+        bottom: 10%;
+        left: -90px;
+        cursor: pointer;
+        top: 10px; 
+        width: -20px;
+        
+
+    }
+
+    .Principe{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .Zorro{
+        width: 200px;
+    }
+    
+    .Rosa {
+        width: 200px;
         height: 100px;
     }
 
