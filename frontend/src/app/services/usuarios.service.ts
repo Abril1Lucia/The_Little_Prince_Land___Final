@@ -9,7 +9,7 @@ export class UsuariosService {
 
 private _httpClient = inject(HttpClient);
 
-private URL_USERS = 'http://localhost:9000/usuarios';
+private URL_USERS = 'http://18.227.209.169:9000/usuarios';
 
 postUsuarios(user :Users){
 

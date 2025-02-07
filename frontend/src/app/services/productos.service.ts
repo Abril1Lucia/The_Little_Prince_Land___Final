@@ -13,10 +13,10 @@ export class ProductosService {
 
   private _httpClient = inject(HttpClient); 
 
-  API_URL_GET = 'http://localhost:9000/imagenes/obtener';
-  API_URL_POST = 'http://localhost:9000/imagenes/crear';
-  API_URL_PUT = 'http://localhost:9000/imagenes/actualizar';
-  API_URL_DELETE = 'http://localhost:9000/imagenes/eliminar';
+  API_URL_GET = 'http://18.227.209.169:9000/imagenes/obtener';
+  API_URL_POST = 'http://18.227.209.169:9000/imagenes/crear';
+  API_URL_PUT = 'http://18.227.209.169/imagenes/actualizar';
+  API_URL_DELETE = 'http://18.227.209.169/imagenes/eliminar';
 
 
   
