@@ -22,6 +22,8 @@ export class TarjetaProductoComponent {
 
   allProducts : Imagen[] = [];
 
+
+  
   obtenerProductos(){
 
     this._productsService.getProducts().subscribe({

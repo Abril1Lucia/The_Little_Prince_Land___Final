@@ -1,1 +1,25 @@
-<p>users works!</p>
+<main class="container mt-5 border border-black rounded-3 my-5">
+  <h2 class="Moon">Usuarios Registrados</h2>
+  <table class="table">
+      <thead>
+          <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">email</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">telefono</th>
+          </tr>
+      </thead>
+      <tbody class="table-group-divider" id="miTabla">
+          @for (producto of allUsers; track $index){
+          <tr>
+              <td>{{producto.fullName}}</td>
+              <td>{{producto.email}}</td>
+              <td>{{producto._id}}</td>
+              <td>{{producto.phone}}</td>
+              <td class="acciones">
+              </td>
+          </tr>
+      }
+      </tbody>
+  </table>
+</main>

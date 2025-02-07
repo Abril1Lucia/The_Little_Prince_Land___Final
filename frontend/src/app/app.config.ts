@@ -15,10 +15,15 @@ export const appConfig: ApplicationConfig = {
 
 
   provideToastr({
-    timeOut:200,
-    positionClass: 'toast-bottom'
+    timeOut: 2000, //tiempo de duración en pantalla
+    positionClass: 'toast-bottom-left', //definir donde queremos que se muestre
+    preventDuplicates: true, //evitar duplicados
+    easeTime: 0, //cuánto tiempo pasa antes de que aparezca en pantalla
+    progressBar: true //si queremos o no la barra de progreso
   }),
 
+
+  
   //hay errores de compatilidad we, tener presente eso o nos jodemos we ;-;
 
   provideAnimations(),

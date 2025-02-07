@@ -1,3 +1,4 @@
+<div *ngFor="let item of allProducts" class="row mt-5">
 <section class="container text-center">
     <h1> Registro de Inventario</h1>
 
@@ -23,8 +24,8 @@
                         class="rounded-circle"
                         />
                     <div class="ms-3">
-                      <p class="fw-bold mb-1">John Doe</p>
-                      <p class="text-muted mb-0">john.doe&#64;gmail.com</p>
+                      <p class="fw-bold mb-1">{{item.description}}</p>
+                      <p class="text-muted mb-0">{{item.name}}</p>
                     </div>
                   </div>
                 </td>
@@ -48,3 +49,5 @@
     </div>
 
 </section>
+
+</div>

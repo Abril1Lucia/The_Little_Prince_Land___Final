@@ -90,13 +90,11 @@ export const putimageById = async (request, response) => {
     });
   }
 };
+
+
+
+
 //peticion del delete para eliminarlos we
-
-
-
-
-
-
 
 
 

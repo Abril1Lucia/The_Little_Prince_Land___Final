@@ -1,4 +1,5 @@
 export interface Users {
+    _id?:string;
     image?: string;
     fullName: string;
     email: string;

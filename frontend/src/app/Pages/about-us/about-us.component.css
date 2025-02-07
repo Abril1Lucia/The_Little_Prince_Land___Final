@@ -57,10 +57,6 @@
 
 
 
-
-
-
-
 .title {
     font-size: 30px;
     text-align: center;
@@ -169,7 +165,18 @@
 
 
 
-@media (max-width: 1024px){
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 768px) and (max-width: 1024px){
 
 
     main{
@@ -189,13 +196,21 @@
 
     .cajasHover{
         text-align: center;
-  margin-bottom: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .letritas{
+        text-align: center;
+        margin-bottom: 20px;
     }
 
      .cajasHover p{
-        display: block;
-        max-width: 100%; /* Ajusta el ancho de la imagen al contenedor */
-        height: auto; /* Mantiene las proporciones de la imagen */
-        border-radius: 10px; /* Agrega bordes redondeados */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        
      }
+
 }

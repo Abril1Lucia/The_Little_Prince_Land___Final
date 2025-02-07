@@ -2,11 +2,16 @@ import { Component, inject } from '@angular/core';
 import { ProductosService } from '../../services/productos.service';
 import { FormsModule } from '@angular/forms';
 import { Imagen } from '../../interfaces/Imagen';
+import { UsersComponent } from './users/users.component';
+import { InventarioComponent } from './inventario/inventario.component';
+import { NgFor } from '@angular/common';
+import { UsuariosService } from '../../services/usuarios.service';
+import { FooterComponent } from "../../Componets/footer/footer.component";
 
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [FormsModule],
+  imports: [NgFor, FormsModule, UsersComponent, FooterComponent],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
@@ -30,8 +35,7 @@ export class AdminComponent {
     this._dataService.getProducts().subscribe({
       next: (res: any) => {
         console.log('res', res);
-        this.allProducts = res;
-        // console.log(this.allProducts);
+        this.allProducts = res.datos;
       },
       error: (error) => {
         console.error('Hubo un error', error);
@@ -85,7 +89,7 @@ export class AdminComponent {
 
   
 
-  modificarProducto() {
+  modificarProducto(id: string | undefined) {
     console.log('Entré');
     console.log(this.editProductId, this.name, this.image, this.description, this.technique, this.category );
 
@@ -120,7 +124,7 @@ export class AdminComponent {
 
 
 
-borrarProducto(id: string) {
+borrarProducto(id: string | undefined) {
   console.log('Producto a borrar:', id);
 
   this._dataService.deleteProduct(id).subscribe({
