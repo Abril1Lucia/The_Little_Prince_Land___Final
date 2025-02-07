@@ -1,6 +1,6 @@
 import loginUsers from "../services/loginUsers.service.js";
 
-import loginAdmins from "../services/loginadmin.service.js";
+import loginAdmins from "../services/loginAdmin.service.js";
 
 import express from "express";
 
