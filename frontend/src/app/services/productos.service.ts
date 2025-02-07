@@ -15,8 +15,8 @@ export class ProductosService {
 
   API_URL_GET = 'http://3.138.68.225:9000/imagenes/obtener';
   API_URL_POST = 'http://3.138.68.225:9000/imagenes/crear';
-  API_URL_PUT = 'http://3.138.68.225/imagenes/actualizar';
-  API_URL_DELETE = 'http://3.138.68.225/imagenes/eliminar';
+  API_URL_PUT = 'http://3.138.68.225:9000/imagenes/actualizar';
+  API_URL_DELETE = 'http://3.138.68.225:9000/imagenes/eliminar';
 
 
   

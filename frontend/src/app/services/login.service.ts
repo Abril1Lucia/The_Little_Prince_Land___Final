@@ -19,8 +19,8 @@ private _router = inject(Router)
 public  _toastrService = inject(ToastrService);
 
 //se saca del backend y el postman we
-private URL_LOGIN_USER = "http://3.138.68.225/iniciarSesion/Users"
-private URL_LOGIN_ADMIN ='http://3.138.68.225/iniciarSesion/Admin'
+private URL_LOGIN_USER = "http://3.138.68.225:9000/iniciarSesion/Users"
+private URL_LOGIN_ADMIN ='http://3.138.68.225:9000/iniciarSesion/Admin'
 //iniciar sesion peticion de POST 
 
 IniciodeSesionUser(credencialesdeingreso:Credenciales){
